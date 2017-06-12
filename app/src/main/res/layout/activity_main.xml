@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RSA Crypt"
+        android:textAlignment="center" />
+    tools:context="com.example.hammer.rsacrypt.MainActivity">
+
+    <EditText
+        android:id="@+id/Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Message"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/enbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Encrypt it by PublicKey"
+        />
+
+    <EditText
+        android:id="@+id/raw"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Encrypted Message" />
+
+    <Button
+        android:id="@+id/debutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Decrypt it by PrivateKey"
+        />
+
+    <EditText
+        android:id="@+id/OriginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Original Message"
+        android:textAlignment="center" />
+
+</LinearLayout>
